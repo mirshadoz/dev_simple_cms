@@ -6,10 +6,10 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: #simple_cms_development
+  database: dev_simple_cms_development
   pool: 5
-  username: root
-  password: simplepassword
+  username: mirshadoz
+  password: secretpassword
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -18,17 +18,17 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: #simple_cms_test
+  database: dev_simple_cms_development
   pool: 5
-  username: root
-  password: simplepassword
+  username: mirshadoz
+  password: secretpassword
   socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: #simple_cms_production
+  database: dev_simple_cms_development
   pool: 5
-  username: root
-  password: simplepassword
+  username: mirshadoz
+  password: secretpassword
   socket: /var/run/mysqld/mysqld.sock
