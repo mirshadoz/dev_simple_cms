@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150512012938) do
+ActiveRecord::Schema.define(version: 20150609174509) do
 
   create_table "admin_users", force: true do |t|
     t.string   "first_name",      limit: 25
@@ -24,6 +24,13 @@ ActiveRecord::Schema.define(version: 20150512012938) do
   end
 
   add_index "admin_users", ["username"], name: "index_admin_users_on_username", using: :btree
+
+  create_table "demos", force: true do |t|
+    t.string   "name",       limit: 25
+    t.float    "price",                 default: 0.0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", force: true do |t|
     t.integer  "subject_id"
